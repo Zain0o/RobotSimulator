@@ -1,76 +1,82 @@
-Console-Based Robot Arena Simulation
+# Console-Based Robot Arena Simulation
+
 A Java program that simulates robots moving within a console-based arena. Robots can be added, moved, and animated within the arena, displaying their movements directly in the console.
 
-Features
-Random Robot Placement and Direction:
+## Features
 
-New robots are placed at random, unoccupied positions with random initial directions (North, East, South, or West).
-Directional Movement and Collision Avoidance:
+- **Random Robot Placement and Direction**: 
+  - New robots are placed at random, unoccupied positions with random initial directions (North, East, South, or West).
 
-Robots attempt to move forward in their current direction and change direction when they encounter obstacles or arena boundaries.
-User Interaction via Console Menu:
+- **Directional Movement and Collision Avoidance**: 
+  - Robots attempt to move forward in their current direction and change direction when they encounter obstacles or arena boundaries.
 
-A simple console menu allows users to add robots, display robot information, move robots, simulate movements, create a new arena with custom dimensions, and save or load the arena state.
-Save and Load Arena State:
+- **User Interaction via Console Menu**: 
+  - A simple console menu allows users to add robots, display robot information, move robots, simulate movements, create a new arena with custom dimensions, and save or load the arena state.
 
-The current state of the arena can be saved to a file and loaded back, allowing the simulation to be paused and resumed.
-Customizable Arena Size:
+- **Save and Load Arena State**: 
+  - The current state of the arena can be saved to a file and loaded back, allowing the simulation to be paused and resumed.
 
-Users can create a new arena with specified dimensions.
-Classes and Structure
-Robot:
+- **Customizable Arena Size**: 
+  - Users can create a new arena with specified dimensions.
 
-Represents an individual robot with its position, direction, and unique identifier.
-RobotArena:
+## Classes and Structure
 
-Manages the arena grid and the collection of robots, handling their placement and movement logic.
-RobotInterface:
+- **`Robot`**: 
+  - Represents an individual robot with its position, direction, and unique identifier.
 
-Provides the user interface, handling user input and coordinating actions within the simulation.
-Direction:
+- **`RobotArena`**: 
+  - Manages the arena grid and the collection of robots, handling their placement and movement logic.
 
-An enum representing the four cardinal directions, with methods for random selection and cycling through directions.
-ConsoleCanvas:
+- **`RobotInterface`**: 
+  - Provides the user interface, handling user input and coordinating actions within the simulation.
 
-Handles the visual representation of the arena in the console using ASCII characters.
-TextFile:
+- **`Direction`**: 
+  - An enum representing the four cardinal directions, with methods for random selection and cycling through directions.
 
-Manages file input/output operations for saving and loading the arena state.
-Usage
+- **`ConsoleCanvas`**: 
+  - Handles the visual representation of the arena in the console using ASCII characters.
+
+- **`TextFile`**: 
+  - Manages file input/output operations for saving and loading the arena state.
+
+## Usage
+
 Upon running the program, you will be presented with a menu of options to interact with the simulation.
 
-Menu Options
-(A)dd Robot:
+### Menu Options
 
-Adds a new robot to the arena at a random position and direction.
-Get (I)nformation:
+- **(A)dd Robot**: 
+  - Adds a new robot to the arena at a random position and direction.
 
-Displays information about all robots in the arena.
-(D)isplay Arena:
+- **Get (I)nformation**: 
+  - Displays information about all robots in the arena.
 
-Shows the current state of the arena with all robots.
-(M)ove Robots:
+- **(D)isplay Arena**: 
+  - Shows the current state of the arena with all robots.
 
-Moves all robots one step forward.
-(S)imulate:
+- **(M)ove Robots**: 
+  - Moves all robots one step forward.
 
-Animates robot movements over multiple steps.
-(N)ew Arena:
+- **(S)imulate**: 
+  - Animates robot movements over multiple steps.
 
-Creates a new arena, with the option to specify new dimensions.
-(L)oad:
+- **(N)ew Arena**: 
+  - Creates a new arena, with the option to specify new dimensions.
 
-Loads the arena state from a file (arena_save.txt).
-(W)rite:
+- **(L)oad**: 
+  - Loads the arena state from a file (`arena_save.txt`).
 
-Saves the current arena state to a file (arena_save.txt).
-E(X)it:
+- **(W)rite**: 
+  - Saves the current arena state to a file (`arena_save.txt`).
 
-Exits the program.
-Customization
-Changing Arena Dimensions:
+- **E(X)it**: 
+  - Exits the program.
 
-When creating a new arena, you can specify custom width and height.
-Modifying Robot Symbols:
+## Customization
 
-In the ConsoleCanvas class, you can change the symbol used to represent robots (currently 'R').
+- **Changing Arena Dimensions**:
+  - When creating a new arena, you can specify custom width and height.
+
+- **Modifying Robot Symbols**:
+  - In the `ConsoleCanvas` class, you can change the symbol used to represent robots (currently `'R'`).
+
