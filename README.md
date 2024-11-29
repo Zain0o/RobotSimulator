@@ -1,5 +1,4 @@
-markdown
-Console-Based Robot Arena Simulation
+onsole-Based Robot Arena Simulation
 A Java program that simulates robots moving within a console-based arena. Robots can be added, moved, and animated within the arena, displaying their movements directly in the console.
 
 Features
@@ -72,6 +71,22 @@ Enter (A)dd Robot, get (I)nformation, ... > S
 [Robots move and the arena updates over several steps]
 Note: Replace "32019071" with your student number or identifier as needed.
 
+Program Structure
+The program consists of the following classes:
+
+Robot: Contains properties and methods related to individual robots.
+RobotArena: Manages the arena and the collection of robots.
+RobotInterface: Handles user input and program execution flow.
+Direction: Enum for robot directions with methods for direction handling.
+ConsoleCanvas: Manages the display of the arena in the console.
+TextFile: Provides file read and write operations for saving/loading the arena state.
+Customization
+Changing Arena Dimensions:
+
+When creating a new arena, you can specify custom width and height.
+Modifying Robot Symbols:
+
+In the ConsoleCanvas class, you can change the symbol used to represent robots (currently 'R').
 Example
 Here's a brief example demonstrating how to interact with the program:
 
@@ -100,19 +115,3 @@ Select (N)ew arena to reset the arena, optionally specifying new dimensions.
 Exit Program:
 
 Choose (X) to exit the simulation.
-Program Structure
-The program consists of the following classes:
-
-Robot: Contains properties and methods related to individual robots.
-RobotArena: Manages the arena and the collection of robots.
-RobotInterface: Handles user input and program execution flow.
-Direction: Enum for robot directions with methods for direction handling.
-ConsoleCanvas: Manages the display of the arena in the console.
-TextFile: Provides file read and write operations for saving/loading the arena state.
-Customization
-Changing Arena Dimensions:
-
-When creating a new arena, you can specify custom width and height.
-Modifying Robot Symbols:
-
-In the ConsoleCanvas class, you can change the symbol used to represent robots (currently 'R').
